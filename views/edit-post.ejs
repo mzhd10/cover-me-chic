@@ -1,5 +1,6 @@
-  <%- include ('partials/header.ejs') %>
+ <%- include ('partials/header.ejs') %>
   <body>
+   
     <main id="site-main">
         <section
         class="hero-section hero-50 d-flex justify-content-center align-items-center"
@@ -127,7 +128,16 @@
                     required
                   ><%= post.body %></textarea>
                 </div>
-               
+                <div class="mb-3">
+                  <span for="current-image" class="form-label">Current Image</span>
+                  <br>
+                  <img
+                    src="../<%= post.imageUrl %>"
+                    alt="Current Image"
+                    class="img-fluid"
+                  />
+                
+                </div>
                 <div class="mb-3">
                   <label for="image" class="form-label">Upload Image</label>
                   <input
@@ -135,7 +145,9 @@
                     class="form-control"
                     id="image"
                     name="image"
-                  />
+                    required
+                   />
+                
                 </div>
       
                  <button type="submit" class="btn custom-btn smoothscroll me-3"
@@ -159,6 +171,7 @@
   <script src=".././js/animated-headline.js"></script>
   <script src=" .././js/modernizr.js"></script>
   <script src=".././js/custom.js"></script>
+  
 
 
 
