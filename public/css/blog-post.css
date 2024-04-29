@@ -1126,7 +1126,9 @@ footer .menu li a:hover {
   .navbar-brand {
     font-size: var(--p-font-size);
   }
-
+ .navbar-toggler {
+    margin-right: 20px;
+  }
   .navbar-brand-icon {
     width: 30px;
     height: 30px;
